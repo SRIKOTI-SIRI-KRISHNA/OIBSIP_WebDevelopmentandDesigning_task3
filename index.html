@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+    <h2>Temperature Converter</h2>
+
+    <label>Degrees</label>
+    <input 
+        type="text" 
+        id="temperature" 
+        placeholder="Enter temperature">
+
+    <label>Type</label>
+    <select id="unit">
+        <option value="C">Celsius</option>
+        <option value="F">Fahrenheit</option>
+    </select>
+
+    <button onclick="convertTemp()">Convert</button>
+
+    <div id="result" class="result"></div>
+    <div id="error" class="error"></div>
+</div>
+
+<script src="server.js"></script>
+</body>
+</html>
